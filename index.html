@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#087f5b">
+  <meta name="description" content="Website resmi TK Aisyiyah Bustanul Athfal Suhada. Belajar, bermain, tumbuh menjadi anak saleh dan berakhlak mulia.">
+  <title>TK Aisyiyah Bustanul Athfal Suhada</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root{--green:#087f5b;--green2:#12a875;--mint:#e7f8ef;--yellow:#ffd45c;--coral:#ff826e;--blue:#75c8f3;--ink:#183b32;--muted:#60766f;--white:#fff;--line:#e6eee9;--shadow:0 14px 40px rgba(18,91,64,.10)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;font-family:'Nunito',sans-serif;color:var(--ink);background:#fff;line-height:1.65}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.container{width:min(1140px,calc(100% - 40px));margin:auto}
+    .topbar{background:var(--green);color:white;font-size:.88rem;padding:8px 0}.topbar .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid rgba(230,238,233,.8)}.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:11px;min-width:0}.brand-mark{width:47px;height:47px;border-radius:16px;background:var(--yellow);display:grid;place-items:center;font-size:25px;box-shadow:inset 0 -4px 0 rgba(0,0,0,.05)}.brand-name{font-weight:900;font-size:1rem;line-height:1.18}.brand-name small{display:block;color:var(--green);font-size:.7rem;letter-spacing:.09em;margin-top:4px}.nav-links{display:flex;align-items:center;gap:23px;font-size:.92rem;font-weight:800}.nav-links a:hover{color:var(--green2)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:999px;padding:13px 21px;font-weight:900;cursor:pointer;transition:.2s}.nav-cta,.btn-primary{background:var(--green);color:#fff;box-shadow:0 8px 20px rgba(8,127,91,.18)}.nav-cta:hover,.btn-primary:hover{background:#06694c;transform:translateY(-2px)}.menu-btn{display:none;background:var(--mint);border:0;border-radius:12px;padding:10px 13px;font-size:1.2rem}
+    .hero{position:relative;overflow:hidden;background:linear-gradient(120deg,#f0fff5 0%,#fff9e8 68%,#fff3ee 100%);padding:76px 0 72px}.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;pointer-events:none}.hero:before{width:260px;height:260px;background:rgba(117,200,243,.18);top:-110px;right:8%}.hero:after{width:170px;height:170px;background:rgba(255,130,110,.14);bottom:-80px;left:28%}.hero-grid{display:grid;grid-template-columns:1.03fr .97fr;align-items:center;gap:44px;position:relative;z-index:1}.eyebrow{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #d8f0e2;color:var(--green);font-weight:900;font-size:.84rem;padding:8px 14px;border-radius:999px}.hero h1{font-size:clamp(2.5rem,5.2vw,4.4rem);line-height:1.08;letter-spacing:-.045em;margin:19px 0}.hero h1 span{color:var(--green)}.hero p{color:var(--muted);font-size:1.08rem;max-width:570px;margin:0 0 25px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.btn-outline{background:#fff;border:1px solid #dcebe2;color:var(--green)}.btn-outline:hover{background:var(--mint)}.hero-note{display:flex;align-items:center;gap:10px;margin-top:24px;font-size:.88rem;color:var(--muted);font-weight:700}.avatars{display:flex}.avatars span{width:31px;height:31px;border-radius:50%;display:grid;place-items:center;background:var(--yellow);border:2px solid white;margin-left:-6px}.avatars span:first-child{margin-left:0}.hero-art{min-height:410px;position:relative;display:grid;place-items:center}.art-frame{width:min(100%,460px);height:370px;border-radius:44% 56% 50% 50% / 48% 42% 58% 52%;background:linear-gradient(145deg,#c8f1d8,#a6e3c1);position:relative;display:grid;place-items:center;overflow:hidden;border:9px solid rgba(255,255,255,.8);box-shadow:var(--shadow)}.art-frame img{width:100%;height:100%;object-fit:cover}.art-emoji{font-size:8rem;filter:drop-shadow(0 12px 0 rgba(8,127,91,.07))}.float-card{position:absolute;background:#fff;border-radius:20px;padding:13px 17px;box-shadow:var(--shadow);font-weight:900;display:flex;align-items:center;gap:10px}.float-card small{display:block;color:var(--muted);font-weight:700;font-size:.75rem}.float-one{left:-5px;top:43px}.float-two{right:-5px;bottom:42px}.float-icon{width:42px;height:42px;display:grid;place-items:center;border-radius:14px;background:#fff2c8;font-size:1.4rem}
+    .stats{margin-top:-1px;background:white}.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);padding:25px 0;border-bottom:1px solid var(--line)}.stat{display:flex;align-items:center;justify-content:center;gap:12px;border-right:1px solid var(--line)}.stat:last-child{border:0}.stat-icon{font-size:1.7rem}.stat strong{display:block;font-size:1.12rem}.stat small{color:var(--muted);font-weight:700}
+    section{padding:82px 0}.section-head{text-align:center;max-width:690px;margin:0 auto 42px}.section-tag{color:var(--green);font-size:.82rem;font-weight:900;letter-spacing:.12em;text-transform:uppercase}.section-head h2{font-size:clamp(2rem,3.5vw,3rem);line-height:1.15;letter-spacing:-.035em;margin:10px 0 13px}.section-head p{color:var(--muted);margin:0}.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:55px;align-items:center}.about-visual{background:var(--mint);border-radius:32px;padding:24px;min-height:350px;display:grid;place-items:center;position:relative;overflow:hidden}.about-visual img{width:100%;height:310px;object-fit:cover;border-radius:22px}.about-placeholder{font-size:7rem}.about-sticker{position:absolute;bottom:18px;right:14px;background:var(--yellow);border-radius:18px;padding:13px 17px;font-weight:900;transform:rotate(4deg)}.about-copy h3{font-size:1.7rem;line-height:1.25;margin:0 0 15px}.about-copy p{color:var(--muted)}.check-list{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin:22px 0}.check{display:flex;gap:9px;font-weight:800}.check b{color:var(--green);font-size:1.1rem}
+    .programs{background:#f7fcf8}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.program-card{padding:27px;background:#fff;border:1px solid var(--line);border-radius:25px;box-shadow:0 7px 24px rgba(18,91,64,.04);transition:.2s}.program-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}.program-icon{width:62px;height:62px;display:grid;place-items:center;border-radius:20px;font-size:1.9rem;margin-bottom:19px}.program-card h3{margin:0 0 8px;font-size:1.22rem}.program-card p{color:var(--muted);margin:0;font-size:.95rem}.yellow{background:#fff1be}.pink{background:#ffe2dd}.blue{background:#dff3ff}.purple{background:#eee5ff}.greenbg{background:#dff7e8}.orange{background:#ffe8d5}
+    .values-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.value{text-align:center;padding:23px 15px;border-radius:22px;background:#fff;border:1px solid var(--line)}.value span{font-size:2.2rem}.value h3{font-size:1.03rem;margin:9px 0 4px}.value p{font-size:.88rem;color:var(--muted);margin:0}
+    .gallery{background:#fffaf0}.gallery-grid{display:grid;grid-template-columns:1.15fr 1fr 1fr;grid-template-rows:190px 190px;gap:15px}.gallery-item{border-radius:22px;overflow:hidden;position:relative;background:linear-gradient(135deg,#c7f0d8,#fff0c2);display:grid;place-items:center}.gallery-item:first-child{grid-row:span 2;background:linear-gradient(150deg,#b8e9cd,#f5fbd7)}.gallery-item img{width:100%;height:100%;object-fit:cover;transition:.4s}.gallery-item:hover img{transform:scale(1.05)}.gallery-placeholder{font-size:4.5rem}.gallery-caption{position:absolute;bottom:12px;left:12px;background:rgba(255,255,255,.92);padding:7px 12px;border-radius:999px;font-weight:900;font-size:.82rem}
+    .admission-grid{display:grid;grid-template-columns:1fr 1fr;gap:38px;align-items:center}.admission-panel{background:var(--green);color:white;padding:36px;border-radius:30px;position:relative;overflow:hidden}.admission-panel:after{content:"🌟";position:absolute;font-size:7rem;right:-5px;top:-20px;opacity:.15}.admission-panel h2{font-size:2.2rem;line-height:1.15;margin:10px 0 14px}.admission-panel p{color:#d7f5e5}.admission-panel .btn{background:var(--yellow);color:var(--ink);margin-top:8px}.steps{display:grid;gap:18px}.step{display:flex;gap:15px;align-items:flex-start}.step-num{flex:0 0 43px;height:43px;display:grid;place-items:center;background:var(--mint);color:var(--green);border-radius:15px;font-weight:900}.step h3{margin:0 0 3px;font-size:1.08rem}.step p{margin:0;color:var(--muted);font-size:.93rem}
+    .contact{background:#f7fcf8}.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:35px}.contact-info{display:grid;gap:14px}.contact-row{display:flex;gap:15px;padding:18px;background:white;border:1px solid var(--line);border-radius:18px}.contact-row>span{width:45px;height:45px;border-radius:14px;background:var(--mint);display:grid;place-items:center;font-size:1.3rem;flex-shrink:0}.contact-row h3{font-size:1rem;margin:0 0 3px}.contact-row p{margin:0;color:var(--muted);font-size:.93rem}.contact-form{background:white;padding:26px;border:1px solid var(--line);border-radius:25px;box-shadow:var(--shadow)}.contact-form h3{margin:0 0 17px}.field{margin-bottom:14px}.field label{display:block;font-weight:800;font-size:.9rem;margin-bottom:6px}.field input,.field select,.field textarea{width:100%;border:1px solid #dce8e0;border-radius:12px;padding:12px 13px;outline:none;background:#fcfefc}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--green2);box-shadow:0 0 0 3px #12a87520}.field textarea{min-height:90px;resize:vertical}.contact-form .btn{width:100%}
+    footer{background:#123e31;color:white;padding:38px 0 20px}.footer-top{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-bottom:25px;border-bottom:1px solid #ffffff26}.footer-brand{display:flex;gap:12px;align-items:center}.footer-brand .brand-mark{flex-shrink:0}.footer-brand p{margin:4px 0 0;color:#b8d5c9;font-size:.88rem}.footer-links{display:flex;gap:18px;flex-wrap:wrap;font-weight:800;font-size:.9rem}.copyright{padding-top:18px;color:#b8d5c9;font-size:.85rem;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}.wa-float{position:fixed;right:22px;bottom:22px;z-index:30;background:#20bd68;color:white;width:60px;height:60px;border-radius:50%;display:grid;place-items:center;font-size:1.8rem;box-shadow:0 8px 25px #087f5b45;border:3px solid white}.wa-float:hover{transform:translateY(-3px)}
+    @media(max-width:900px){.nav-links{gap:13px;font-size:.84rem}.hero-grid{gap:20px}.hero-art{min-height:340px}.art-frame{height:310px}.about-grid{gap:30px}.cards{grid-template-columns:repeat(2,1fr)}.values-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:700px){.container{width:min(100% - 30px,540px)}.topbar .container{justify-content:center;text-align:center}.nav{height:70px}.brand-name{font-size:.88rem}.brand-mark{width:42px;height:42px}.menu-btn{display:block}.nav-cta{display:none}.nav-links{display:none;position:absolute;left:0;right:0;top:70px;background:#fff;padding:15px 22px 22px;box-shadow:0 18px 24px #123e3114;flex-direction:column;align-items:stretch;gap:0}.nav-links.open{display:flex}.nav-links a{padding:12px 4px;border-bottom:1px solid var(--line)}.hero{padding:48px 0 42px}.hero-grid{grid-template-columns:1fr}.hero h1{font-size:2.75rem}.hero p{font-size:1rem}.hero-art{min-height:300px;margin-top:6px}.art-frame{height:285px;width:86%}.art-emoji{font-size:6rem}.float-one{left:0;top:22px}.float-two{right:0;bottom:15px}.float-card{padding:10px 12px;font-size:.85rem}.float-icon{width:34px;height:34px}.stats-grid{grid-template-columns:1fr 1fr;gap:18px 0}.stat{justify-content:flex-start;padding:4px 10px;border-right:0}.stat:nth-child(odd){border-right:1px solid var(--line)}section{padding:60px 0}.section-head{margin-bottom:30px}.about-grid,.admission-grid,.contact-grid{grid-template-columns:1fr}.about-visual{min-height:270px}.about-visual img{height:240px}.check-list{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.values-grid{grid-template-columns:1fr 1fr;gap:10px}.value{padding:17px 10px}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:180px 145px 145px}.gallery-item:first-child{grid-row:span 2}.gallery-item:nth-child(4){grid-column:span 2}.admission-panel{padding:28px}.admission-panel h2{font-size:1.9rem}.footer-top{align-items:flex-start;flex-direction:column}.copyright{flex-direction:column}.wa-float{width:54px;height:54px;right:15px;bottom:15px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+  </style>
+</head>
+<body>
+  <div class="topbar"><div class="container"><span>🌼 Selamat datang di website TK Aisyiyah Bustanul Athfal Suhada</span><span>🌱 Belajar • Bermain • Bertumbuh</span></div></div>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#beranda" aria-label="Beranda">
+        <div class="brand-mark">🌷</div>
+        <div class="brand-name">TK AISYIYAH BUSTANUL ATHFAL SUHADA<small>TUMBUH CERIA, BERAKHLAK MULIA</small></div>
+      </a>
+      <nav class="nav-links" id="navLinks" aria-label="Navigasi utama">
+        <a href="#beranda">Beranda</a><a href="#profil">Profil</a><a href="#program">Program</a><a href="#galeri">Galeri</a><a href="#pendaftaran">Pendaftaran</a><a href="#kontak">Kontak</a>
+      </nav>
+      <a class="nav-cta" href="#pendaftaran">Daftar Sekarang ↗</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Buka menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="beranda">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">☀️ Sekolah Islam • Dunia Anak Penuh Warna</span>
+          <h1>Tempat kecil untuk <span>mimpi besar.</span></h1>
+          <p>Selamat datang di TK Aisyiyah Bustanul Athfal Suhada. Kami mendampingi anak belajar, bermain, mengenal nilai-nilai Islam, dan mengembangkan potensi terbaiknya dengan penuh kasih sayang.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="#pendaftaran">🎒 Info Pendaftaran</a><a class="btn btn-outline" href="#profil">Kenali Sekolah Kami</a></div>
+          <div class="hero-note"><div class="avatars"><span>😊</span><span>🌻</span><span>⭐</span></div><span>Lingkungan ramah anak, belajar dengan gembira.</span></div>
+        </div>
+        <div class="hero-art" aria-label="Ilustrasi suasana belajar anak">
+          <div class="art-frame"><img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=900&q=85" alt="Anak-anak bermain dan belajar" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><div class="art-emoji" style="display:none">🧒🏻👧🏽</div></div>
+          <div class="float-card float-one"><span class="float-icon">📚</span><span>Belajar seru<small>Setiap hari penuh cerita</small></span></div>
+          <div class="float-card float-two"><span class="float-icon">💚</span><span>Akhlak mulia<small>Fondasi masa depan</small></span></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="stats"><div class="container stats-grid">
+      <div class="stat"><span class="stat-icon">🧩</span><div><strong>Belajar Aktif</strong><small>Melalui bermain</small></div></div>
+      <div class="stat"><span class="stat-icon">🌱</span><div><strong>Tumbuh Optimal</strong><small>Sesuai tahap usia</small></div></div>
+      <div class="stat"><span class="stat-icon">🤲</span><div><strong>Nilai Islami</strong><small>Akhlak dan adab</small></div></div>
+      <div class="stat"><span class="stat-icon">👨‍👩‍👧</span><div><strong>Kolaborasi</strong><small>Sekolah & keluarga</small></div></div>
+    </div></div>
+
+    <section id="profil">
+      <div class="container about-grid">
+        <div class="about-visual"><img src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=900&q=85" alt="Anak bermain di luar ruangan" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><div class="about-placeholder" style="display:none">🌈🧸</div><div class="about-sticker">✨ Belajar dengan hati</div></div>
+        <div class="about-copy"><span class="section-tag">Tentang Sekolah</span><h3>Mendampingi langkah pertama menuju masa depan cerah.</h3><p>TK Aisyiyah Bustanul Athfal Suhada merupakan konsep pendidikan anak usia dini berbasis nilai-nilai Islam yang mengutamakan pengalaman belajar menyenangkan, pembiasaan baik, kreativitas, dan kemandirian.</p><p>Melalui suasana yang hangat dan kegiatan yang sesuai tahap perkembangan, anak didorong untuk berani mencoba, bertanya, berbagi, serta menghargai sesama.</p>
+          <div class="check-list"><div class="check"><b>✓</b> Pembiasaan akhlak baik</div><div class="check"><b>✓</b> Belajar sambil bermain</div><div class="check"><b>✓</b> Kreativitas dan eksplorasi</div><div class="check"><b>✓</b> Kemandirian anak</div></div>
+          <a class="btn btn-primary" href="#program">Lihat Program Belajar →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="programs" id="program">
+      <div class="container"><div class="section-head"><span class="section-tag">Program Pembelajaran</span><h2>Belajar banyak hal dengan cara menyenangkan</h2><p>Contoh kegiatan yang dapat disesuaikan dengan kurikulum dan program resmi sekolah.</p></div>
+        <div class="cards">
+          <article class="program-card"><div class="program-icon yellow">📖</div><h3>Keislaman & Akhlak</h3><p>Mengenal doa harian, adab, kisah teladan, serta pembiasaan perilaku baik dalam keseharian.</p></article>
+          <article class="program-card"><div class="program-icon pink">🎨</div><h3>Seni & Kreativitas</h3><p>Menggambar, mewarnai, bernyanyi, membuat karya, dan mengekspresikan ide dengan percaya diri.</p></article>
+          <article class="program-card"><div class="program-icon blue">🔢</div><h3>Bahasa & Berhitung</h3><p>Mengenal huruf, angka, bentuk, warna, cerita, dan kosakata melalui permainan interaktif.</p></article>
+          <article class="program-card"><div class="program-icon purple">🧱</div><h3>Motorik & Eksplorasi</h3><p>Aktivitas gerak, permainan konstruksi, dan eksplorasi lingkungan yang aman dan terarah.</p></article>
+          <article class="program-card"><div class="program-icon greenbg">🤝</div><h3>Sosial & Kemandirian</h3><p>Belajar berbagi, bekerja sama, merapikan barang, dan melakukan kegiatan sederhana sendiri.</p></article>
+          <article class="program-card"><div class="program-icon orange">🌿</div><h3>Cinta Lingkungan</h3><p>Mengenal alam, merawat tanaman, menjaga kebersihan, dan membangun kebiasaan peduli lingkungan.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container"><div class="section-head"><span class="section-tag">Mengapa Memilih Kami?</span><h2>Setiap anak istimewa</h2><p>Kami percaya anak berkembang dengan baik saat merasa aman, dihargai, dan diberi kesempatan mencoba.</p></div>
+        <div class="values-grid">
+          <div class="value"><span>💗</span><h3>Penuh Kasih Sayang</h3><p>Suasana belajar hangat dan mendukung.</p></div>
+          <div class="value"><span>🌟</span><h3>Potensi Anak</h3><p>Menghargai keunikan setiap anak.</p></div>
+          <div class="value"><span>🕌</span><h3>Nilai Islami</h3><p>Membiasakan adab dalam kegiatan.</p></div>
+          <div class="value"><span>🏡</span><h3>Mitra Orang Tua</h3><p>Bekerja sama mendukung tumbuh kembang.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery" id="galeri">
+      <div class="container"><div class="section-head"><span class="section-tag">Galeri Kegiatan</span><h2>Potret kecil penuh kebahagiaan</h2><p>Ganti foto contoh berikut dengan foto asli kegiatan dan fasilitas sekolah.</p></div>
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="https://images.unsplash.com/photo-1472162072942-cd5147eb3902?auto=format&fit=crop&w=900&q=85" alt="Anak-anak beraktivitas bersama" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="gallery-placeholder" style="display:none">🧒🏽</span><span class="gallery-caption">Bermain Bersama</span></div>
+          <div class="gallery-item"><img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=700&q=85" alt="Kegiatan belajar anak" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="gallery-placeholder" style="display:none">📚</span><span class="gallery-caption">Belajar Ceria</span></div>
+          <div class="gallery-item"><img src="https://images.unsplash.com/photo-1560785496-3c9d27877182?auto=format&fit=crop&w=700&q=85" alt="Aktivitas seni anak" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="gallery-placeholder" style="display:none">🎨</span><span class="gallery-caption">Karya Kreatif</span></div>
+          <div class="gallery-item"><img src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=700&q=85" alt="Anak mengeksplorasi alam" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="gallery-placeholder" style="display:none">🌿</span><span class="gallery-caption">Cinta Alam</span></div>
+          <div class="gallery-item"><img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=700&q=85" alt="Anak-anak tersenyum" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="gallery-placeholder" style="display:none">😊</span><span class="gallery-caption">Senyum Sahabat</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pendaftaran">
+      <div class="container admission-grid">
+        <div class="admission-panel"><span class="eyebrow" style="color:var(--green);border:0">🎒 Penerimaan Peserta Didik</span><h2>Yuk, mulai petualangan belajar si kecil bersama kami!</h2><p>Hubungi sekolah untuk mendapatkan informasi terbaru tentang jadwal pendaftaran, kelompok usia, persyaratan, dan biaya pendidikan.</p><a class="btn" href="#kontak">Tanya Pendaftaran ↗</a></div>
+        <div><div class="section-head" style="text-align:left;margin:0 0 25px"><span class="section-tag">Langkah Pendaftaran</span><h2 style="font-size:2rem">Mudah dalam 3 langkah</h2></div>
+          <div class="steps"><div class="step"><div class="step-num">01</div><div><h3>Hubungi pihak sekolah</h3><p>Tanyakan kuota, jadwal, biaya, dan persyaratan pendaftaran terbaru.</p></div></div><div class="step"><div class="step-num">02</div><div><h3>Siapkan dokumen</h3><p>Siapkan dokumen anak dan orang tua sesuai daftar resmi dari sekolah.</p></div></div><div class="step"><div class="step-num">03</div><div><h3>Konfirmasi pendaftaran</h3><p>Ikuti arahan petugas sekolah untuk menyelesaikan proses pendaftaran.</p></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="kontak">
+      <div class="container"><div class="section-head"><span class="section-tag">Hubungi Kami</span><h2>Kami siap menyambut keluarga Anda</h2><p>Silakan hubungi sekolah untuk bertanya atau membuat janji kunjungan.</p></div>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="contact-row"><span>📍</span><div><h3>Alamat Sekolah</h3><p>Tambahkan alamat lengkap TK Aisyiyah Bustanul Athfal Suhada di sini.</p></div></div>
+            <div class="contact-row"><span>📱</span><div><h3>WhatsApp</h3><p>Nomor WhatsApp sekolah belum diisi. Atur nomor pada kode website.</p></div></div>
+            <div class="contact-row"><span>🕗</span><div><h3>Jam Layanan</h3><p>Senin–Jumat, pukul 08.00–12.00 WIB (contoh, mohon sesuaikan).</p></div></div>
+            <div class="contact-row"><span>✉️</span><div><h3>Email</h3><p>Tambahkan alamat email resmi sekolah jika tersedia.</p></div></div>
+          </div>
+          <form class="contact-form" id="contactForm"><h3>💌 Kirim pertanyaan pendaftaran</h3>
+            <div class="field"><label for="namaOrtu">Nama orang tua</label><input id="namaOrtu" name="namaOrtu" placeholder="Nama Anda" required></div>
+            <div class="field"><label for="namaAnak">Nama anak</label><input id="namaAnak" name="namaAnak" placeholder="Nama calon siswa" required></div>
+            <div class="field"><label for="minat">Informasi yang dibutuhkan</label><select id="minat" name="minat"><option>Informasi pendaftaran</option><option>Biaya pendidikan</option><option>Jadwal kunjungan sekolah</option><option>Program belajar</option><option>Lainnya</option></select></div>
+            <div class="field"><label for="pesan">Pesan tambahan</label><textarea id="pesan" name="pesan" placeholder="Tuliskan pertanyaan Anda (opsional)"></textarea></div>
+            <button class="btn btn-primary" type="submit">Kirim melalui WhatsApp ↗</button>
+            <p style="font-size:.8rem;color:var(--muted);margin:12px 0 0">Form ini membuka WhatsApp dengan pesan yang sudah disiapkan; tidak menyimpan data di website.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container"><div class="footer-top"><div class="footer-brand"><div class="brand-mark">🌷</div><div><strong>TK AISYIYAH BUSTANUL ATHFAL SUHADA</strong><p>Tumbuh ceria, berakhlak mulia.</p></div></div><div class="footer-links"><a href="#profil">Profil</a><a href="#program">Program</a><a href="#galeri">Galeri</a><a href="#kontak">Kontak</a></div></div><div class="copyright"><span>© <span id="year"></span> TK Aisyiyah Bustanul Athfal Suhada.</span><span>Dibuat dengan 💚 untuk pendidikan anak usia dini.</span></div></div></footer>
+  <a class="wa-float" id="waFloat" href="#" aria-label="Hubungi sekolah melalui WhatsApp" title="WhatsApp">☏</a>
+
+  <script>
+    // PENTING: Ganti nomor di bawah dengan nomor WhatsApp sekolah.
+    // Gunakan kode negara tanpa tanda +, spasi, atau strip. Contoh Indonesia: 6281234567890
+    const WHATSAPP_NUMBER = "6281234567890"; // GANTI nomor contoh ini sebelum website dipublikasikan.
+
+    const menuBtn = document.getElementById("menuBtn");
+    const navLinks = document.getElementById("navLinks");
+    menuBtn.addEventListener("click", () => {
+      const opened = navLinks.classList.toggle("open");
+      menuBtn.setAttribute("aria-expanded", String(opened));
+      menuBtn.textContent = opened ? "✕" : "☰";
+    });
+    navLinks.querySelectorAll("a").forEach(link => link.addEventListener("click", () => {
+      navLinks.classList.remove("open"); menuBtn.setAttribute("aria-expanded","false"); menuBtn.textContent="☰";
+    }));
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    function waLink(message) {
+      return "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(message);
+    }
+    document.getElementById("waFloat").href = waLink("Assalamu'alaikum, saya ingin bertanya tentang TK Aisyiyah Bustanul Athfal Suhada.");
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const namaOrtu = document.getElementById("namaOrtu").value.trim();
+      const namaAnak = document.getElementById("namaAnak").value.trim();
+      const minat = document.getElementById("minat").value;
+      const pesan = document.getElementById("pesan").value.trim();
+      const message = `Assalamu'alaikum, saya ${namaOrtu}.\nNama calon siswa: ${namaAnak}.\nSaya ingin bertanya tentang: ${minat}.\nPesan: ${pesan || "-"}.\nMohon informasi lebih lanjut. Terima kasih.`;
+      window.open(waLink(message), "_blank", "noopener,noreferrer");
+    });
+  </script>
+</body>
+</html>
